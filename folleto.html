@@ -92,6 +92,32 @@ nav a:hover {
     border-bottom: 2px solid var(--gold);
     padding-bottom: 5px;
 }
+
+    /* ... otros estilos ... */
+    .container { 
+        max-width: 850px; /* Ancho máximo */
+        width: 95%;      /* Ancho responsivo para pantallas chicas */
+        margin: 20px auto; 
+        background: var(--white); 
+        box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+    }
+
+    .services-grid { 
+        display: grid; 
+        /* Se adapta solo: si no caben dos de 300px, pone una sola */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 20px; 
+    }
+
+    header { 
+        padding: 40px 20px; /* Reducimos padding para móviles */
+    }
+
+    h1 { font-size: 1.8rem; } /* Usar rem ayuda a la escala */
+
+
+
+
     </style>
 </head>
 <body>
